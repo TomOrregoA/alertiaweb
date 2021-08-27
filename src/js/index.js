@@ -6,7 +6,7 @@ window.addEventListener('scroll', function () {
 
     if (scrollPosition >= 30) {
         navbar.classList.add("scrolled");
-        brand.src = "/src/img/logo.svg";
+        brand.src = "src/img/logo.svg";
         lineItem.forEach((arrayElement, index) => {
             setTimeout(function () {
                 lineItem[index].classList.add("text-grey");
@@ -16,7 +16,7 @@ window.addEventListener('scroll', function () {
 
     } else {
         navbar.classList.remove("scrolled");
-        brand.src = "/src/img/logo-white.svg";
+        brand.src = "src/img/logo-white.svg";
         lineItem.forEach((arrayElement, index) => {
             setTimeout(function () {
                 lineItem[index].classList.add("text-white");
