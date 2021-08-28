@@ -1,5 +1,6 @@
 let brand = document.getElementById("brand");
-var lineItem = Array.from(document.querySelectorAll('.nav-link'))
+let lineItem = Array.from(document.querySelectorAll('.nav-link'));
+let navbar = document.getElementById("navbar");
 
 window.addEventListener('scroll', function () {
     scrollPosition = window.scrollY;
@@ -14,6 +15,8 @@ window.addEventListener('scroll', function () {
             }, 20);
         });
 
+    } else if(scrollPosition >= 100){
+        navbar.classList.add("d-none");
     } else {
         navbar.classList.remove("scrolled");
         brand.src = "src/img/logo-white.svg";

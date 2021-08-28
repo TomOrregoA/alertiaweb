@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 :root {
     --grey: #484B51;
@@ -8,6 +8,7 @@
     --lighter-limegreen: #57d864;
     --blue-gradient: linear-gradient(180deg, #5496EE 0%, #41AAE3 100%);
     --gray-gradient: linear-gradient(90deg, #fcfcfc 0%, #f0f0f0 100%);
+    --sky-gradient: linear-gradient(180deg, #fff 0%, #E2EDF7 100%);
     --shadow: -5px 5px 8px -2px rgba(0, 0, 0, 0.3);
 }
 
@@ -19,20 +20,21 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
 }
 
 h1 {
     font-weight: 700;
 }
 
-nav,header {
+nav,
+header {
     text-align: left;
 }
 
 /* NAVBAR */
 #navbar {
     background: transparent;
+    padding: 1em 2em;
 }
 
 #navbar.scrolled {
@@ -85,8 +87,6 @@ header {
     transform: scale(110%);
 }
 
-
-
 /* NOSOTROS */
 #nosotros {
     padding: 5rem;
@@ -95,12 +95,27 @@ header {
 /* PRODUCTO */
 #producto {
     padding: 0;
-    margin-bottom: 3rem;
 }
 
 #caracteristicas {
     background: var(--blue-gradient);
     border-radius: 50px;
+}
+
+#caracteristicas img {
+    display:block;
+    margin:auto;
+}
+
+.card {
+    padding: 2em 1em;
+    background: var(--gray-gradient);
+    -webkit-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+}
+
+.card-title {
+    font-weight: 500;
 }
 
 .msg-alertia {
@@ -125,14 +140,36 @@ header {
 
 /* CONTACTO */
 #contacto {
-    margin: 5rem 0;
-}
-
-#contacto h2 {
+    padding: 5rem;
+    margin-top: 5rem;
     position: relative;
 }
 
-#contacto h2::after {
+.imagenes-contacto {
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    text-align: center;
+}
+.imagenes-contacto > img{
+    max-width: 10rem;
+}
+
+.imagenes-contacto.img-man {
+    left: 20%;
+}
+
+.imagenes-contacto.img-woman {
+    right: 20%;
+}
+
+
+.titulo {
+    position: relative;
+    font-weight: 400;
+}
+
+.titulo::after {
     position: absolute;
     content: '';
     height: 3px;
@@ -152,7 +189,7 @@ header {
 }
 
 /* optional hover classes used with anmiation */
-#contacto h2:hover:after {
+.titulo:hover:after {
     width: 10%;
     background: var(--lighter-blue);
 }
@@ -183,8 +220,16 @@ header {
     border-radius: 25px 25px 0 0;
 }
 
+/* CONTACT AND FOOTER CONTAINER */
+
+#contfoot {
+    background: var(--sky-gradient);
+    border-radius: 50% 50% 0 0;
+}
+
 /* MEDIA QUERIES */
 @media(max-width: 768px) {
+
     nav,
     header {
         text-align: center;

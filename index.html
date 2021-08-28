@@ -16,8 +16,8 @@
 <body>
 
   <!-- HOME -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top mx-5">
-    <div class="d-flex d-md-block justify-content-md-center">
+  <nav id="navbar" class="navbar navbar-expand-md navbar-light fixed-top mx-5 px-5 d-flex justify-content-between">
+    <div class="d-flex d-md-block justify-content-center">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img id="brand" src="src/img/logo-white.svg" alt="" width="80" height="auto">
@@ -72,8 +72,9 @@
   <section id="nosotros" class="px-3 text-md-justify">
     <div class="container d-flex justify-content-center">
       <div class="col-lg-6 text-center">
-        <h2 class="py-3">Nosotros</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tincidunt erat a iaculis. Nulla
+        <h2 class="text-center titulo">Nosotros</h2>
+        <p class="py-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tincidunt erat a
+          iaculis. Nulla
           porttitor nibh justo, blandit convallis purus vehicula nec. Nunc fermentum feugiat gravida.Mauris dapibus
           lectus
           erat, et porttitor eros varius quis. Cras nunc ex, vehicula id sollicitudin vitae, pellentesque id odio.
@@ -196,52 +197,62 @@
     </div>
   </section>
 
+  <!-- LAST SECTION -->
+  <section id="contfoot">
+    <!-- CONTACTO -->
 
-  <!-- CONTACTO -->
-
-  <section id="contacto">
-    <div class="container mb-5">
-      <h2 class="text-center">Contacto</h2>
-    </div>
-    <div class="d-flex justify-content-center">
-      <div class="card bg-light contenedor-formulario">
-        <div class="card-body">
-          <form id="formulario">
-            <div class="form-group mb-3">
-              <label for="inputName">Nombre</label>
-              <input type="email" class="form-control" id="inputName">
-            </div>
-            <div class="form-group mb-3">
-              <label for="inputEmail1">Email</label>
-              <input type="text" class="form-control" id="inputEmail1">
-            </div>
-            <div class="form-group mb-3">
-              <label for="areaText">Mensaje</label>
-              <input type="text-area" class="form-control" id="areaText">
-            </div>
-            <button type="submit" class="submit-button text-center">Enviar</button>
-          </form>
+    <section id="contacto">
+      <div class="container d-lg-block d-none">
+        <div class="imagenes-contacto img-man">
+          <img src="src/img/man.svg" alt="">
+        </div>
+        <div class="imagenes-contacto img-woman">
+          <img src="src/img/woman.svg" alt="">
         </div>
       </div>
-    </div>
-
-  </section>
-
-
-  <!-- FOOTER -->
-
-  <footer id="footer">
-    <div class="container">
-      <div class="d-flex align-items-end justify-content-between px-5">
-        <a class="navbar-brand" href="#">
-          <img src="src/img/logo-white.svg" alt="" width="100" height="100">
-        </a>
-        <p class="text-white">Copyright 2021 ©</p>
+      <div class="container mb-5">
+        <h2 class="text-center titulo">Contacto</h2>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="card bg-light contenedor-formulario">
+          <div class="card-body">
+            <form id="formulario">
+              <div class="form-group mb-3">
+                <label for="inputName">Nombre</label>
+                <input type="email" class="form-control" id="inputName">
+              </div>
+              <div class="form-group mb-3">
+                <label for="inputEmail1">Email</label>
+                <input type="text" class="form-control" id="inputEmail1">
+              </div>
+              <div class="form-group mb-3">
+                <label for="areaText">Mensaje</label>
+                <input type="text-area" class="form-control" id="areaText">
+              </div>
+              <button type="submit" class="submit-button text-center">Enviar</button>
+            </form>
+          </div>
+        </div>
       </div>
 
+    </section>
 
-    </div>
-  </footer>
+
+    <!-- FOOTER -->
+
+    <footer id="footer">
+      <div class="container">
+        <div class="d-flex align-items-end justify-content-between px-5">
+          <a class="navbar-brand" href="#">
+            <img src="src/img/logo-white.svg" alt="" width="100" height="100">
+          </a>
+          <p class="text-white">Copyright 2021 ©</p>
+        </div>
+
+
+      </div>
+    </footer>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
