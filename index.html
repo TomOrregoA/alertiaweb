@@ -16,7 +16,7 @@
 <body>
 
   <!-- HOME -->
-  <nav id="navbar" class="navbar navbar-expand-md navbar-light fixed-top mx-5 px-5 d-flex justify-content-between">
+  <nav id="navbar" class="navbar navbar-expand-md navbar-light fixed-top mx-md-5 px-5 d-flex justify-content-between">
     <div class="d-flex d-md-block justify-content-center">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -73,7 +73,8 @@
     <div class="container d-flex justify-content-center">
       <div class="col-lg-6 text-center">
         <h2 class="text-center titulo">Nosotros</h2>
-        <p class="py-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tincidunt erat a
+        <p class="py-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum
+          tincidunt erat a
           iaculis. Nulla
           porttitor nibh justo, blandit convallis purus vehicula nec. Nunc fermentum feugiat gravida.Mauris dapibus
           lectus
@@ -90,62 +91,72 @@
   <!-- PRODUCTO -->
 
   <section id="producto" class="container-fluid">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 text-center">
-          <h2 class="msg-alertia">¿Que es ALERT<span>IA</span>?</h2>
-        </div>
-        <div class="col-lg-6 text-justify">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tincidunt erat a iaculis. Nulla
-            porttitor nibh justo, blandit convallis purus vehicula nec. Nunc fermentum feugiat gravida.Mauris dapibus
-            lectus erat, et porttitor eros varius quis. Cras nunc ex.</p>
+
+    <div class="container-fluid mb-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center mb-2">
+            <h2 class="msg-alertia">¿Que es ALERT<span>IA</span>?</h2>
+          </div>
+          <div class="col-lg-6 text-justify p-5">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tincidunt erat a iaculis. Nulla
+              porttitor nibh justo, blandit convallis purus vehicula nec. Nunc fermentum feugiat gravida.Mauris dapibus
+              lectus erat, et porttitor eros varius quis. Cras nunc ex.</p>
+          </div>
         </div>
       </div>
     </div>
 
 
-    <div class="container my-5">
-      <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
-        <div class="col">
-          <div class="card">
-            <div class="container d-flex justify-content-center">
-              <img src="src/img/icon-baliza.svg" class="img-fluid icono" alt="..." width="160px" height="auto">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <div class="container d-flex justify-content-center">
-              <img src="src/img/icon-alarma.svg" class="img-fluid icono" alt="..." width="160px" height="auto">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+    <div id="cartas" class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4 text-center m-0">
+        <div class="col col-lg-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front d-flex align-items-center justify-content-around">
+                <img src="src/img/icon-alarma.svg" class="img-fluid icono" alt="...">
+              </div>
+              <div class="flip-card-back d-flex flex-column align-items-center justify-content-around p-3">
+                <h5 class="h2">Card title</h5>
+                <p class="">This is a longer card with supporting text below as a natural lead-in to
+                  additional
+                  content.</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <div class="container d-flex justify-content-center">
-              <img src="src/img/icon-ok.svg" class="img-fluid icono" alt="..." width="160px" height="auto">
+        <div class="col col-lg-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front d-flex align-items-center justify-content-around">
+                <img src="src/img/icon-baliza.svg" class="img-fluid icono" alt="...">
+              </div>
+              <div class="flip-card-back d-flex flex-column align-items-center justify-content-around p-3">
+                <h5 class="h2">Card title</h5>
+                <p class="">This is a longer card with supporting text below as a natural lead-in to
+                  additional
+                  content.</p>
+              </div>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p>
+          </div>
+        </div>
+        <div class="col col-lg-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front d-flex align-items-center justify-content-around">
+                <img src="src/img/icon-ok.svg" class="img-fluid icono" alt="...">
+              </div>
+              <div class="flip-card-back d-flex flex-column align-items-center justify-content-around p-3">
+                <h5 class="h2">Card title</h5>
+                <p class="">This is a longer card with supporting text below as a natural lead-in to
+                  additional
+                  content.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
-
 
     <div id="caracteristicas" class="container-fluid">
       <div class="container py-5 px-3">
@@ -242,7 +253,7 @@
 
     <footer id="footer">
       <div class="container">
-        <div class="d-flex align-items-end justify-content-between px-5">
+        <div class="d-flex align-items-center align-items-md-end justify-content-between px-5 flex-column flex-md-row">
           <a class="navbar-brand" href="#">
             <img src="src/img/logo-white.svg" alt="" width="100" height="100">
           </a>

@@ -92,9 +92,15 @@ header {
     padding: 5rem;
 }
 
+.nosotros-text{
+    border: 2px solid var(--grey);
+    border-radius: 25px;
+}
+
 /* PRODUCTO */
 #producto {
     padding: 0;
+    margin-bottom: 2rem;
 }
 
 #caracteristicas {
@@ -103,20 +109,71 @@ header {
 }
 
 #caracteristicas img {
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
 }
 
-.card {
-    padding: 2em 1em;
-    background: var(--gray-gradient);
+/* Cartas */
+
+#cartas {
+    margin-bottom: 8rem;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+
+.flip-card-front .icono {
+    height: auto;
+    width: 150px;
+}
+
+.flip-card-front {
+    background: var(--blue-gradient);
     -webkit-box-shadow: var(--shadow);
     box-shadow: var(--shadow);
 }
 
-.card-title {
-    font-weight: 500;
+.flip-card-back {
+    background: var(--grey-gradient);
+    color: var(--grey);
+    transform: rotateY(180deg);
+    -webkit-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+    background: var(--gray-gradient);
+    border: 2px solid var(--grey);
 }
+
+/* Fin cartas*/
 
 .msg-alertia {
     font-weight: 700;
@@ -130,18 +187,13 @@ header {
     background: var(--gray-gradient);
     padding: 3rem 2rem;
     border-radius: 25px;
-    -webkit-box-shadow: var(--shadow);
-    box-shadow: var(--shadow);
+
 }
 
-.icono {
-    max-width: 6rem;
-}
 
 /* CONTACTO */
 #contacto {
     padding: 5rem;
-    margin-top: 5rem;
     position: relative;
 }
 
@@ -151,7 +203,8 @@ header {
     z-index: 999;
     text-align: center;
 }
-.imagenes-contacto > img{
+
+.imagenes-contacto>img {
     max-width: 10rem;
 }
 
