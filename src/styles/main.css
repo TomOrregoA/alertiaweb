@@ -35,6 +35,7 @@ header {
 #navbar {
     background: transparent;
     padding: 1em 2em;
+    transition: position 500ms ease-in;
 }
 
 #navbar.scrolled {
@@ -92,7 +93,7 @@ header {
     padding: 5rem;
 }
 
-.nosotros-text{
+.nosotros-text {
     border: 2px solid var(--grey);
     border-radius: 25px;
 }
@@ -286,7 +287,17 @@ header {
     nav,
     header {
         text-align: center;
+
     }
+
+    #navbar {
+        transition: background 500ms ease-in;
+        background: white;
+        border-radius: 0 0 25px 25px;
+        -webkit-box-shadow: var(--shadow);
+        box-shadow: var(--shadow);
+    }
+
 }
 
 @media (min-width: 768px) {

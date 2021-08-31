@@ -17,32 +17,30 @@
 
   <!-- HOME -->
   <nav id="navbar" class="navbar navbar-expand-md navbar-light fixed-top mx-md-5 px-5 d-flex justify-content-between">
-    <div class="d-flex d-md-block justify-content-center">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img id="brand" src="src/img/logo-white.svg" alt="" width="80" height="auto">
-        </a>
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img id="brand" src="src/img/logo-white.svg" alt="" width="80" height="auto">
+      </a>
+      <button id="nav-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
         aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    </div>
-    <div class="collapse navbar-collapse" id="navbarToggler">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="#">INICIO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">NOSOTROS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">PRODUCTO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">CONTACTO</a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">NOSOTROS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">PRODUCTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -160,8 +158,8 @@
 
     <div id="caracteristicas" class="container-fluid">
       <div class="container py-5 px-3">
-        <div class="row align-items-center">
-          <div class="col-lg-6 text-white mb-3">
+        <div class="d-flex flex-column flex-md-row align-items-center  mb-4">
+          <div class="order-2 order-md-1 text-white">
             <h2>Geolocalización de
               las activaciones
             </h2>
@@ -173,15 +171,12 @@
               manera posible.
             </p>
           </div>
-          <div class="col-lg-6">
+          <div class="order-1 order-md-2 flex-grow-1">
             <img src="src/img/map.svg" alt="" class="img-fluid">
           </div>
         </div>
-        <div class="row align-items-center mb-3">
-          <div class="col-lg-6">
-            <img src="src/img/desktop.png" alt="escritorio" class="img-fluid" style="max-width: 16rem; height: auto">
-          </div>
-          <div class="col-lg-6 text-white">
+        <div class="d-flex flex-column flex-md-row align-items-center mb-4">
+          <div class="order-2 text-white mb-3">
             <h2>Visualiza y gestiona desde un computador
             </h2>
             <p>
@@ -189,10 +184,12 @@
               porttitor nibh justo, blandit convallis purus vehicula nec. Nunc fermentum feugiat gravida.
             </p>
           </div>
+          <div class="order-1 text-white mb-3">
+            <img src="src/img/desktop.png" alt="escritorio" class="img-fluid" style="max-width: 16rem; height: auto">
+          </div>
         </div>
-
-        <div class="row align-items-center mb-3">
-          <div class="col-lg-6 text-white">
+        <div class="d-flex flex-column flex-md-row align-items-center">
+          <div class="order-2 order-md-1 text-white mb-3">
             <h2>También puedes ver la aplicación desde el celular
             </h2>
             <p>
@@ -200,7 +197,7 @@
               porttitor nibh justo, blandit convallis purus vehicula nec. Nunc fermentum feugiat gravida.
             </p>
           </div>
-          <div class="col-lg-6">
+          <div class="order-1 order-md-2 text-white mb-3">
             <img src="src/img/movil.png" alt="movil" class="img-fluid" style="max-width: 8rem; height: auto">
           </div>
         </div>
