@@ -21,8 +21,9 @@
       <a class="navbar-brand" href="#">
         <img id="brand" src="src/img/logo-white.svg" alt="" width="80" height="auto">
       </a>
-      <button id="nav-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
-        aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <button id="nav-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarToggler">
@@ -31,13 +32,13 @@
             <a class="nav-link active text-white" aria-current="page" href="#">INICIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">NOSOTROS</a>
+            <a class="nav-link text-white" href="#nosotros">NOSOTROS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">PRODUCTO</a>
+            <a class="nav-link text-white" href="#producto">PRODUCTO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">CONTACTO</a>
+            <a class="nav-link text-white" href="#contacto">CONTACTO</a>
           </li>
         </ul>
       </div>
@@ -58,7 +59,7 @@
       </div>
     </div>
     <div id="flecha-header" class="d-flex justify-content-center">
-      <a class="text-white" href="">
+      <a class="text-white" href="#nosotros">
         <i class="bi bi-caret-down-fill"></i>
       </a>
       </di>
@@ -71,7 +72,7 @@
     <div class="container d-flex justify-content-center">
       <div class="col-lg-6 text-center">
         <h2 class="text-center titulo">Nosotros</h2>
-        <p class="py-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum
+        <p class="pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum
           tincidunt erat a
           iaculis. Nulla
           porttitor nibh justo, blandit convallis purus vehicula nec. Nunc fermentum feugiat gravida.Mauris dapibus
@@ -105,61 +106,59 @@
       </div>
     </div>
 
+    <div id="cartas" class="container-fluid">
 
-    <div id="cartas" class="container">
-      <div class="row row-cols-1 row-cols-md-3 g-4 text-center m-0">
-        <div class="col col-lg-4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-around">
-                <img src="src/img/icon-alarma.svg" class="img-fluid icono" alt="...">
-              </div>
-              <div class="flip-card-back d-flex flex-column align-items-center justify-content-around p-3">
-                <h5 class="h2">Card title</h5>
-                <p class="">This is a longer card with supporting text below as a natural lead-in to
-                  additional
-                  content.</p>
-              </div>
+      <div class="d-flex flex-column flex-md-row gap-4 gap-md-0 justify-content-md-between text-center m-0 py-5">
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front d-flex align-items-center justify-content-around">
+              <img src="src/img/icon-alarma.svg" class="img-fluid icono" alt="...">
+            </div>
+            <div class="flip-card-back d-flex flex-column align-items-center justify-content-around p-3 c-red">
+              <h5 class="h2">Card title</h5>
+              <p class="">This is a longer card with supporting text below as a natural lead-in to
+                additional
+                content.</p>
             </div>
           </div>
         </div>
-        <div class="col col-lg-4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-around">
-                <img src="src/img/icon-baliza.svg" class="img-fluid icono" alt="...">
-              </div>
-              <div class="flip-card-back d-flex flex-column align-items-center justify-content-around p-3">
-                <h5 class="h2">Card title</h5>
-                <p class="">This is a longer card with supporting text below as a natural lead-in to
-                  additional
-                  content.</p>
-              </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front d-flex align-items-center justify-content-around">
+              <img src="src/img/icon-baliza.svg" class="img-fluid icono" alt="...">
+            </div>
+            <div class="flip-card-back d-flex flex-column align-items-center justify-content-around p-3 c-yellow">
+              <h5 class="h2">Card title</h5>
+              <p class="">This is a longer card with supporting text below as a natural lead-in to
+                additional
+                content.</p>
             </div>
           </div>
         </div>
-        <div class="col col-lg-4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-around">
-                <img src="src/img/icon-ok.svg" class="img-fluid icono" alt="...">
-              </div>
-              <div class="flip-card-back d-flex flex-column align-items-center justify-content-around p-3">
-                <h5 class="h2">Card title</h5>
-                <p class="">This is a longer card with supporting text below as a natural lead-in to
-                  additional
-                  content.</p>
-              </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front d-flex align-items-center justify-content-around">
+              <img src="src/img/icon-ok.svg" class="img-fluid icono" alt="...">
+            </div>
+            <div class="flip-card-back d-flex flex-column align-items-center justify-content-around p-3 c-green">
+              <h5 class="h2">Card title</h5>
+              <p class="">This is a longer card with supporting text below as a natural lead-in to
+                additional
+                content.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+
     <div id="caracteristicas" class="container-fluid">
+
       <div class="container py-5 px-3">
-        <div class="d-flex flex-column flex-md-row align-items-center  mb-4">
-          <div class="order-2 order-md-1 text-white">
+        <div
+          class="d-flex flex-column flex-md-row align-items-center justify-content-md-between flex-nowrap cc-container">
+          <div class="order-2 order-md-1 c-container">
             <h2>Geolocalización de
               las activaciones
             </h2>
@@ -171,37 +170,44 @@
               manera posible.
             </p>
           </div>
-          <div class="order-1 order-md-2 flex-grow-1">
+          <div class="c-map">
             <img src="src/img/map.svg" alt="" class="img-fluid">
           </div>
         </div>
-        <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-          <div class="order-2 text-white mb-3">
-            <h2>Visualiza y gestiona desde un computador
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tincidunt erat a iaculis. Nulla
-              porttitor nibh justo, blandit convallis purus vehicula nec. Nunc fermentum feugiat gravida.
-            </p>
+      </div>
+
+
+      <div class="container-fluid">
+        <div class="d-flex flex-column flex-md-row justify-content-around">
+          <div class="d-flex flex-column align-items-center justify-content-md-between cc-container">
+            <div class="c-image">
+              <img src="src/img/desktop.png" alt="escritorio" class="img-fluid desktop-img">
+            </div>
+            <div class="c-container">
+              <h2>Visualiza y gestiona desde un computador
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tincidunt erat a iaculis. Nulla
+                porttitor nibh justo, blandit convallis purus vehicula nec. Nunc fermentum feugiat gravida.
+              </p>
+            </div>
           </div>
-          <div class="order-1 text-white mb-3">
-            <img src="src/img/desktop.png" alt="escritorio" class="img-fluid" style="max-width: 16rem; height: auto">
-          </div>
-        </div>
-        <div class="d-flex flex-column flex-md-row align-items-center">
-          <div class="order-2 order-md-1 text-white mb-3">
-            <h2>También puedes ver la aplicación desde el celular
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tincidunt erat a iaculis. Nulla
-              porttitor nibh justo, blandit convallis purus vehicula nec. Nunc fermentum feugiat gravida.
-            </p>
-          </div>
-          <div class="order-1 order-md-2 text-white mb-3">
-            <img src="src/img/movil.png" alt="movil" class="img-fluid" style="max-width: 8rem; height: auto">
+          <div class="d-flex flex-column align-items-center justify-content-md-between cc-container">
+            <div class="c-image">
+              <img src="src/img/movil.png" alt="movil" class="img-fluid cell-img">
+            </div>
+            <div class="c-container">
+              <h2>Activaciones mediante celular
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tincidunt erat a iaculis. Nulla
+                porttitor nibh justo, blandit convallis purus vehicula nec. Nunc fermentum feugiat gravida.
+              </p>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -235,7 +241,8 @@
               </div>
               <div class="form-group mb-3">
                 <label for="areaText">Mensaje</label>
-                <input type="text-area" class="form-control" id="areaText">
+                <textarea type="textarea" class="form-control" id="areaText" rows="10" cols="50">
+              </textarea>
               </div>
               <button type="submit" class="submit-button text-center">Enviar</button>
             </form>
