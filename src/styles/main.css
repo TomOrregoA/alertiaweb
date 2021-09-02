@@ -23,6 +23,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -63,7 +64,7 @@ header {
 }
 
 .hero {
-    padding: 8rem 0;
+    padding: 8rem 0 0;
 }
 
 .button {
@@ -141,7 +142,7 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 15px;
+    
     -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -149,9 +150,7 @@ header {
     transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-box-shadow: var(--shadow);
-    box-shadow: var(--shadow);
-    border: 4px solid white;
+    
 }
 
 
@@ -160,13 +159,12 @@ header {
     width: 150px;
 }
 
-.flip-card-front {
-    color: white;
-    background: var(--blue-gradient);
-}
-
 .flip-card-back {
     color: white;
+    border-radius: 15px;
+    -webkit-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+    border: 4px solid white;
 }
 
 .flip-card-back.c-red {
@@ -280,13 +278,12 @@ header {
 }
 
 .imagenes-contacto.img-man {
-    left: 20%;
+    left: 10%;
 }
 
 .imagenes-contacto.img-woman {
-    right: 20%;
+    right: 10%;
 }
-
 
 .titulo {
     position: relative;
@@ -376,4 +373,37 @@ header {
     header {
         border-radius: 0 0 25% 25%;
     }
+}
+
+
+/* Animations */
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.appear {
+    opacity: 1;
+}
+
+.from-left {
+    transform: translateX(-50%);
+}
+
+.from-right {
+    transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+    transition: opacity 250ms ease-in, transform
+    400ms ease-in;
+    opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+    transform: translateX(0);
+    opacity: 1;
 }
