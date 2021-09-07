@@ -27,7 +27,7 @@ const appearOptions = {
 
 const sectionNavOptions = {
     threshold: 0,
-    rootMargin: "-50px 0px 0px 0px"
+    rootMargin: "-150px 0px 0px 0px"
 };
 const sectionNavObserver = new IntersectionObserver(function (
         entries,

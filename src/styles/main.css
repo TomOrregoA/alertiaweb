@@ -104,14 +104,14 @@ header {
 
 :is(#alarma-svg, #baliza-svg, #ok-svg) {
     position: absolute;
-    width: 80px;
+    width: 50px;
     z-index: 999;
+    opacity: 0.2;
 }
 
 #alarma-svg {
     top: 10%;
     left: 35%;
-    opacity: 0.5;
     animation: side_to_side 20s 1s 1;
     -moz-animation: side_to_side 20s 1s 1;
     -webkit-animation: side_to_side 20s 1s 1;
@@ -122,7 +122,6 @@ header {
 #baliza-svg {
     top: 55%;
     left: 75%;
-    opacity: 50%;
     animation: up_down 15s 1s 1;
     -moz-animation: up_down 15s 1s 1;
     -webkit-animation: up_down 15s 1s 1;
@@ -133,11 +132,10 @@ header {
 #ok-svg {
     top: 70%;
     left: 20%;
-    opacity: 50%;
-    animation: side_to_side 3s 1s 1;
-    -moz-animation: side_to_side 3s 1s 1;
-    -webkit-animation: side_to_side 3s 1s 1;
-    -o-animation: side_to_side 3s 1s 1;
+    animation: side_to_side 20s 1s 1;
+    -moz-animation: side_to_side 20s 1s 1;
+    -webkit-animation: side_to_side 20s 1s 1;
+    -o-animation: side_to_side 20s 1s 1;
     animation-iteration-count: infinite;
 }
 
@@ -322,6 +320,9 @@ header {
     nav,
     header {
         text-align: center;
+    }
+    #alarma-svg {
+        top: 15%;
     }
 }
 
