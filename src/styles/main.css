@@ -23,7 +23,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    color: var(--grey);
+    background: var(--sky-gradient);
 }
 
 h1 {
@@ -42,7 +44,11 @@ header {
     transition: position 500ms ease-in;
 }
 
-#navbar.scrolled {
+.nav-link {
+    color: white !important;
+}
+
+.nav-scrolled {
     transition: background 500ms ease-in;
     background: white !important;
     border-radius: 0 0 25px 25px;
@@ -50,8 +56,8 @@ header {
     box-shadow: var(--shadow);
 }
 
-.text-grey {
-    color: var(--grey);
+.nav-scrolled .nav-link {
+    color: var(--grey) !important;
 }
 
 
@@ -61,10 +67,11 @@ header {
     color: white;
     background: var(--blue-gradient);
     border-radius: 0 0 15% 15%;
+    margin-bottom: 10rem;
 }
 
-.hero {
-    padding: 8rem 0 0;
+.hero-text {
+    padding: 15rem 0 20rem 0;
 }
 
 .button {
@@ -82,18 +89,25 @@ header {
     transition: all 300ms ease-in-out;
 }
 
-#flecha-header {
-    font-size: 3rem;
+.hero-svg-container {
+    margin-top: 10rem;
+    width: 250px;
+    height: auto;
+    bottom: -10%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
-#flecha-header:hover {
-    transition: all 300ms ease-in-out;
-    transform: translateX(50%);
-    transform: scale(110%);
+#svg-hero {
+    box-shadow: var(--shadow);
 }
 
 /* NOSOTROS */
-#nosotros {
+/* #nosotros {
     padding: 3em;
     position: relative;
 }
@@ -101,120 +115,29 @@ header {
 .nosotros-text {
     border: 2px solid var(--grey);
     border-radius: 25px;
-}
+} */
 
 /* PRODUCTO */
 #producto {
     padding: 0;
-    margin-bottom: 2rem;
+    margin: 5rem 0;
 }
-
-
-/* Cartas en sección productos */
 
 #cartas {
     background: var(--blue-gradient);
     margin-bottom: 5rem;
 }
 
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    perspective: 1000px;
-    cursor: pointer;
-    margin: auto;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
+#caracteristicas {
+    margin-top: 5rem;
 }
 
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
+.c-map-info {
+    color: var(--grey);
 }
 
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    
-    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    
-}
-
-
-.flip-card-front .icono {
-    height: auto;
-    width: 150px;
-}
-
-.flip-card-back {
-    color: white;
-    border-radius: 15px;
-    -webkit-box-shadow: var(--shadow);
-    box-shadow: var(--shadow);
-    border: 4px solid white;
-}
-
-.flip-card-back.c-red {
-    background: var(--red);
-}
-
-.flip-card-back.c-yellow {
-    background: var(--yellow);
-}
-
-.flip-card-back.c-green {
-    background: var(--limegreen);
-}
-
-.flip-card .flip-card-back {
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-}
-
-.flip-card .flip-card-front {
-    transform: rotateY(0deg);
-    -webkit-transform: rotateY(0deg);
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-back {
-    transform: rotateY(0deg);
-    -webkit-transform: rotateY(0deg);
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-front {
-    transform: rotateY(-180deg);
-    -webkit-transform: rotateY(-180deg);
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-}
-
-.c-image .cell-img {
+.c-image img {
     max-width: 35%;
-    display: block;
-    margin: auto;
-}
-
-.c-image .desktop-img {
-    max-width: 50%;
     display: block;
     margin: auto;
 }
@@ -224,41 +147,53 @@ header {
 }
 
 .c-container {
-    padding: 2rem 3rem;
+    padding: 2rem 3rem 0 3rem;
     text-align: center;
 }
 
-.c-container h2{
-    color: var(--grey);
-}
-
-.c-container p{
-    color: var(--light-grey);
+.c-container h2,
+.c-container p {
+    color: white;
 }
 
 .c-container h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 
-
+.c-container p {
+    font-size: 0.8rem;
+}
 
 .c-image {
     z-index: 2;
     position: relative;
 }
 
-/* Fin cartas */
-
+.product-s1 {
+    max-width: 100%;
+    margin-bottom: 5rem;
+    padding: 0 2rem 0 2rem;
+}
 
 .msg-alertia {
     font-weight: 700;
+    margin-bottom: 3rem;
 }
 
 .msg-alertia span {
     color: var(--blue);
 }
 
+.pantallas {
+    background: var(--blue-gradient);
+    padding: 5em 0;
+}
+
+.icons-container {
+    width: 6rem;
+    margin: 0 auto;
+}
 
 /* CONTACTO */
 #contacto {
@@ -344,12 +279,6 @@ header {
     border-radius: 25px 25px 0 0;
 }
 
-/* CONTACT AND FOOTER CONTAINER */
-
-#contfoot {
-    background: var(--sky-gradient);
-    border-radius: 50% 50% 0 0;
-}
 
 /* MEDIA QUERIES */
 @media(max-width: 768px) {
@@ -357,21 +286,21 @@ header {
     nav,
     header {
         text-align: center;
-
-    }
-
-    #navbar {
-        transition: background 500ms ease-in;
-        background: white;
-        border-radius: 0 0 25px 25px;
-        -webkit-box-shadow: var(--shadow);
-        box-shadow: var(--shadow);
     }
 }
 
 @media (min-width: 768px) {
+    .hero-svg-container {
+        width: 350px;
+        bottom: -25%;
+    }
+    .product-s1 {
+        max-width: 50%;
+    }
+
     header {
         border-radius: 0 0 25% 25%;
+        margin-bottom: 15rem;
     }
 }
 
@@ -387,6 +316,14 @@ header {
     opacity: 1;
 }
 
+.from-top {
+    transform: translateY(-50%);
+}
+
+.from-bot {
+    transform: translateY(50%);
+}
+
 .from-left {
     transform: translateX(-50%);
 }
@@ -395,15 +332,18 @@ header {
     transform: translateX(50%);
 }
 
-.from-left,
-.from-right {
-    transition: opacity 250ms ease-in, transform
-    400ms ease-in;
+:is(.from-left,
+    .from-right,
+    .from-top,
+    .from-bot) {
+    transition: all 400ms ease-in;
     opacity: 0;
 }
 
-.from-left.appear,
-.from-right.appear {
+:is(.from-left.appear,
+    .from-right.appear,
+    .from-top.appear,
+    .from-bot.appear) {
     transform: translateX(0);
     opacity: 1;
 }
