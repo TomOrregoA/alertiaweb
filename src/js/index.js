@@ -6,6 +6,7 @@ let navToggler = document.getElementById("nav-toggler");
 
 // Lottie and BodyMovin
 const svgContainer = document.getElementById('hero-svg');
+
 const animItem = bodymovin.loadAnimation({
     wrapper: svgContainer,
     animType: 'svg',

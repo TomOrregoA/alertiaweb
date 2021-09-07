@@ -47,6 +47,15 @@
   </nav>
 
   <header class="container-fluid overflow-x-hidden">
+    <div id="alarma-svg" class="fade-in">
+      <img class="img-fluid" src="src/img/icon-alarma.svg" alt="">
+    </div>
+    <div id="baliza-svg" class="fade-in">
+      <img class="img-fluid" src="src/img/icon-baliza.svg" alt="">
+    </div>
+    <div id="ok-svg" class="fade-in">
+      <img class="img-fluid" src="src/img/icon-ok.svg" alt="">
+    </div>
     <div class="container hero d-flex flex-column">
       <div class="row gx-5 px-4 align-items-center justify-content-around hero-text">
         <div class="hero-content text-center text-white">
@@ -90,11 +99,13 @@
         <div class="text-center">
           <div class="d-flex flex-column align-items-center">
             <h2 class="msg-alertia text-center">¿Que es ALERT<span>IA</span>?</h2>
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tincidunt
-              erat a iaculis. Nulla
-              porttitor nibh justo, blandit convallis purus vehicula nec. Nunc fermentum feugiat gravida.Mauris
-              dapibus
-              lectus erat, et porttitor eros varius quis. Cras nunc ex.</p>
+            <p class="text-justify">ALERTIA© es una solución creada por DEXA©, pensada para
+              conjuntos habitacionales, la cual permite el uso de tecnologías tanto
+              físicas como digitales para generar alarmas de sonido y baliza. Un usuario administrador designado, podrá
+              monitorear en todo momento las activaciones generadas por los demás
+              usuarios, pudiendo comprobar el punto exácto de activación, el sistema se encargará de llevar el registro
+              de las actividades.
+            </p>
           </div>
         </div>
       </div>
@@ -107,10 +118,9 @@
             <img src="src/img/icon-alarma.svg" class="img-fluid icono" alt="...">
           </div>
           <div class="d-flex flex-column align-items-center justify-content-around p-3 c-red text-center">
-            <h5 class="h2">Card title</h5>
-            <p class="">This is a longer card with supporting text below as a natural lead-in to
-              additional
-              content.</p>
+            <h5 class="h2">Sirena</h5>
+            <p class="">Mediante la aplicación, los usuarios serán capaces de activar la alarma de sonido, dejando un
+              registro tanto de la hora de activación como la ubicación del usuario.</p>
           </div>
         </div>
         <div class="col col-12 col-md-4">
@@ -118,10 +128,9 @@
             <img src="src/img/icon-baliza.svg" class="img-fluid icono" alt="...">
           </div>
           <div class="d-flex flex-column align-items-center justify-content-around p-3 c-red text-center">
-            <h5 class="h2">Card title</h5>
-            <p class="">This is a longer card with supporting text below as a natural lead-in to
-              additional
-              content.</p>
+            <h5 class="h2">Baliza</h5>
+            <p class="">El usuario, también podrá generar alarmas silenciosas, mediante el uso de bálizas, lo cual
+              generará una alerta dejando registro, de hora y ubicación en el sistema.</p>
           </div>
         </div>
         <div class="col col-12 col-md-4">
@@ -129,10 +138,9 @@
             <img src="src/img/icon-ok.svg" class="img-fluid icono" alt="...">
           </div>
           <div class="d-flex flex-column align-items-center justify-content-around p-3 c-red text-center">
-            <h5 class="h2">Card title</h5>
-            <p class="">This is a longer card with supporting text below as a natural lead-in to
-              additional
-              content.</p>
+            <h5 class="h2">Ok</h5>
+            <p class="">El usuario que haya activado alguna de las alarmas, así como el usuario administrador, podrán
+              cancelar la alarma en todo momento. Guardando también un registro.</p>
           </div>
         </div>
       </div>
@@ -151,7 +159,7 @@
               las activaciones
             </h2>
             <p>
-              Con ALERTIA tanto el usuario administrador como los demás miembros de la red, podrán saber en todo
+              Con ALERTIA© tanto el usuario administrador como los demás miembros de la red, podrán saber en todo
               momentos la
               ubicación exácta de quien activó la alarma. Para de esta manera poder elaborar un plan de acción de la
               mejor
@@ -165,33 +173,32 @@
 
       <div class="container-fluid pantallas">
         <div class="container">
-          <div class="d-flex flex-column flex-md-row justify-content-around">
+          <div class="row">
             <div
-              class="d-flex flex-column align-items-center justify-content-md-between cc-container fade-in mb-2 mb-md-0">
+              class="col col-12 col-md-6 d-flex flex-column align-items-center justify-content-md-start cc-container fade-in mb-2 mb-md-0">
               <div class="c-image">
                 <img src="src/img/desktop.png" alt="escritorio" class="img-fluid">
               </div>
               <div class="c-container">
-                <h2 class="mb-1 mb-md-2">Visualiza y gestiona desde un computador
+                <h2 class="">Gestion desde computador
                 </h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tincidunt erat a iaculis.
-                  Nulla
-                  porttitor nibh justo, blandit convallis purus vehicula nec. Nunc fermentum feugiat gravida.
+                  Para el usuario administrador, la plataforma podrá ser visualizada mediante pantallas de ordenador,
+                  entregando una vista más completa y detallada.
                 </p>
               </div>
             </div>
-            <div class="d-flex flex-column align-items-center justify-content-md-between cc-container fade-in m-0">
+            <div
+              class="col col-12 col-md-6 d-flex flex-column align-items-center justify-content-md-start cc-container fade-in mb-2 mb-md-0">
               <div class="c-image">
-                <img src="src/img/movil.png" alt="movil" class="img-fluid">
+                <img src="src/img/desktop.png" alt="escritorio" class="img-fluid">
               </div>
               <div class="c-container">
-                <h2 class="mb-1 mb-md-2">Activaciones mediante celular
+                <h2>Activaciones mediante celular
                 </h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tincidunt erat a iaculis.
-                  Nulla
-                  porttitor nibh justo, blandit convallis purus vehicula nec. Nunc fermentum feugiat gravida.
+                  Los habitantes y usuarios de la aplicación, podrán realizar activaciones de las alarmas mediante el
+                  uso de su celular.
                 </p>
               </div>
             </div>
