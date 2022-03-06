@@ -31,10 +31,6 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">INICIO</a>
           </li>
-          <!-- 
-          <li class="nav-item">
-            <a class="nav-link" href="#nosotros">NOSOTROS</a>
-          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="#producto">PRODUCTO</a>
           </li>
@@ -59,8 +55,8 @@
     <div class="container hero d-flex flex-column">
       <div class="row gx-5 px-4 align-items-center justify-content-around hero-text">
         <div class="hero-content text-center text-white">
-          <h1 class="mb-3">Alarma Comunitaria Inteligente</h1>
-          <h3 class="mb-5">Monitoreo en todo momento</h3>
+          <h1 class="mb-3">Seguridad Inteligente de última generación</h1>
+          <h3 class="mb-5">Plataforma integrada de seguridad comunitaria y empresas</h3>
           <a class="button mt-5" href="">Ver video <i class="bi bi-play-circle"></i></a>
         </div>
       </div>
@@ -70,141 +66,170 @@
     </div>
   </header>
 
-  <!-- NOSOTROS -->
-  <!-- 
-  <section id="nosotros" class="px-3 text-md-justify">
-    <div class="container d-flex justify-content-center">
-      <div class="col-lg-6 text-center">
-        <h2 class="text-center titulo">Nosotros</h2>
-        <p class="pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum
-          tincidunt erat a
-          iaculis. Nulla
-          porttitor nibh justo, blandit convallis purus vehicula nec. Nunc fermentum feugiat gravida.Mauris dapibus
-          lectus
-          erat, et porttitor eros varius quis. Cras nunc ex, vehicula id sollicitudin vitae, pellentesque id odio.
-          Pellentesque malesuada lacus ligula, quis eleifend lorem vehicula et. Integer maximus vitae diam eget
-          dignissim.
-        </p>
-      </div>
-    </div>
 
-  </section> -->
 
 
   <!-- PRODUCTO -->
-
-  <section id="producto" class="container-fluid">
+  <section id="producto">
     <div class="container-fluid slide-in from-top">
       <div class="container product-s1">
         <div class="text-center">
           <div class="d-flex flex-column align-items-center">
             <h2 class="msg-alertia text-center">¿Que es ALERT<span>IA</span>?</h2>
-            <p class="text-justify">ALERTIA© es una solución creada por DEXA©, pensada para
-              conjuntos habitacionales, la cual permite el uso de tecnologías tanto
-              físicas como digitales para generar alarmas de sonido y baliza. Un usuario administrador designado, podrá
-              monitorear en todo momento las activaciones generadas por los demás
-              usuarios, pudiendo comprobar el punto exácto de activación, el sistema se encargará de llevar el registro
-              de las actividades.
-            </p>
+            <div class="prod-contenedor">
+              <p class="text-justify">Es una plataforma de seguridad que te conecta rápidamente con tus
+                familiares, vecinos, compañeros de trabajo, municipalidad, policías y otros organismos de seguridad
+                ciudadana, en los momentos de mayor urgencia o de peligro inminente, de forma de poder enfrentar juntos
+                y
+                en coordinación, cualquier delito o emergencia que se pueda estar produciendo, alertando primero a los
+                que
+                están mas cerca para que puedan prestar cooperación de forma rápida y eficiente. Mediante el monitoreo
+                en
+                línea de las situaciones de peligro, permitiendo reaccionar de forma
+                oportuna y coordinada, logrando así evitar la ocurrencia de delitos o siniestros mayores, así como
+                también
+                permite un registro claro y ordenado de las situaciones que ocurren para planificar a futuro mejoras de
+                coordinación.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="container">
-      <div class="row">
-        <div class="col col-12 col-md-4">
-          <div class="d-flex align-items-center justify-content-around icons-container fade-in">
-            <img src="src/img/icon-alarma.svg" class="img-fluid icono" alt="...">
-          </div>
-          <div class="d-flex flex-column align-items-center justify-content-around p-3 c-red text-center slide-in from-bot">
-            <h5 class="h2">Sirena</h5>
-            <p class="">Mediante la aplicación, los usuarios serán capaces de activar la alarma de sonido, dejando un
-              registro tanto de la hora de activación como la ubicación del usuario.</p>
-          </div>
-        </div>
-        <div class="col col-12 col-md-4">
-          <div class="d-flex align-items-center justify-content-around icons-container fade-in">
-            <img src="src/img/icon-baliza.svg" class="img-fluid icono" alt="...">
-          </div>
-          <div class="d-flex flex-column align-items-center justify-content-around p-3 c-red text-center slide-in from-bot">
-            <h5 class="h2">Baliza</h5>
-            <p class="">El usuario, también podrá generar alarmas silenciosas, mediante el uso de bálizas, lo cual
-              generará una alerta dejando registro, de hora y ubicación en el sistema.</p>
-          </div>
-        </div>
-        <div class="col col-12 col-md-4">
-          <div class="d-flex align-items-center justify-content-around icons-container fade-in">
-            <img src="src/img/icon-ok.svg" class="img-fluid icono" alt="...">
-          </div>
-          <div class="d-flex flex-column align-items-center justify-content-around p-3 c-red text-center slide-in from-bot">
-            <h5 class="h2">Ok</h5>
-            <p class="">El usuario que haya activado alguna de las alarmas, así como el usuario administrador, podrán
-              cancelar la alarma en todo momento. Guardando también un registro.</p>
-          </div>
-        </div>
+  <!-- Boton pánico virtual -->
+  <section id="btn-panico" class="px-3 text-md-justify">
+    <div class="container-fluid slide-in from-top product-s1">
+      <h2 class="text-center titulo mb-5">Botón de Pánico Virtual</h2>
+      <div class="d-flex flex-column flex-md-row align-items-center">
+        <!-- <div class="c-map from-left slide-in">
+          <img src="src/img/map.svg" alt="" class="img-fluid">
+        </div> -->
+        <p class="text-center">
+          El Botón de Pánico Virtual es una APP que puede usar en cualquier número de teléfonos móviles Android o
+          iOS, así también como en computadoras normales, tablet y cualquier dispositivo con acceso a internet. Este
+          botón permite poner a su grupo en situación de alerta o peligro, de forma inmediata se envía a todos los
+          involucrados (incluido policías del plan cuadrante) un SMS el detalle de quien presionó el botón, su
+          estado actual, un mapa, teléfono de contacto y acceso directo a WAZE para movilizarse al lugar de alarma.
+          Esto permite que todos los vecinos, porteros, conserjes y organismos de seguridad pertinentes tengan la
+          información necesaria para intervenir en segundos.
+        </p>
       </div>
     </div>
+  </section>
 
-    <div id="caracteristicas" class="container-fluid p-0">
 
-      <div class="container py-5 px-3">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12 col-md-4">
+        <div class="d-flex align-items-center justify-content-around icons-container fade-in">
+          <img src="src/img/icon-alarma.svg" class="img-fluid icono" alt="...">
+        </div>
         <div
-          class="d-flex flex-column flex-md-row align-items-center justify-content-md-between flex-nowrap cc-container">
-          <div class="c-map from-left slide-in">
-            <img src="src/img/map.svg" alt="" class="img-fluid">
-          </div>
-          <div class="c-map-info fade-in">
-            <h2>Geolocalización de
-              las activaciones
-            </h2>
-            <p>
-              Con ALERTIA© tanto el usuario administrador como los demás miembros de la red, podrán saber en todo
-              momentos la
-              ubicación exácta de quien activó la alarma. Para de esta manera poder elaborar un plan de acción de la
-              mejor
-              manera posible.
-            </p>
-          </div>
-
+          class="d-flex flex-column align-items-center justify-content-around p-3 c-red text-center slide-in from-bot">
+          <h5 class="h2">Peligro</h5>
+          <p class="">Alerta al grupo de una situación de peligro grave, en este caso si hay una alarma integrada
+            encenderá tanto la baliza como la sirena emitiendo una luz y sonido disuasorios.</p>
         </div>
       </div>
+      <div class="col col-12 col-md-4">
+        <div class="d-flex align-items-center justify-content-around icons-container fade-in">
+          <img src="src/img/icon-baliza.svg" class="img-fluid icono" alt="...">
+        </div>
+        <div
+          class="d-flex flex-column align-items-center justify-content-around p-3 c-red text-center slide-in from-bot">
+          <h5 class="h2">Alerta</h5>
+          <p class="">Permite avisar al grupo de alguna situación sospechosa y permite que la gente tome actitud
+            alerta ante cualquier cambio. Si hay una alarma integrada encenderá la baliza pero no emitirá el sonido de
+            la sirena.</p>
+        </div>
+      </div>
+      <div class="col col-12 col-md-4">
+        <div class="d-flex align-items-center justify-content-around icons-container fade-in">
+          <img src="src/img/icon-ok.svg" class="img-fluid icono" alt="...">
+        </div>
+        <div
+          class="d-flex flex-column align-items-center justify-content-around p-3 c-red text-center slide-in from-bot">
+          <h5 class="h2">Ok</h5>
+          <p class="">Este botón permite devolver a estado normal en caso de haber terminado la situación de peligro
+            y/o haber ocurrido una activación por error.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <section id="caracteristicas">
 
-      <div class="container-fluid pantallas">
-        <div class="container">
-          <div class="row">
-            <div
-              class="col col-12 col-md-6 d-flex flex-column align-items-center justify-content-md-start cc-container fade-in mb-2 mb-md-0">
-              <div class="c-image">
-                <img src="src/img/desktop.png" alt="escritorio" class="img-fluid">
-              </div>
-              <div class="c-container">
-                <h2 class="">Gestion desde computador
-                </h2>
-                <p>
-                  Para el usuario administrador, la plataforma podrá ser visualizada a través de pantallas de ordenador,
-                  entregando una vista más completa y detallada.
-                </p>
-              </div>
+    <div class="container-fluid pantallas pt-5 pb-0 mb-5">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col col-12 col-md-6 d-flex flex-column align-items-center justify-content-md-start cc-container fade-in mb-2 mb-md-0">
+            <div class="c-image">
+              <img src="src/img/desktop.png" alt="escritorio" class="img-fluid">
             </div>
-            <div
-              class="col col-12 col-md-6 d-flex flex-column align-items-center justify-content-md-start cc-container fade-in mb-2 mb-md-0">
-              <div class="c-image">
-                <img src="src/img/desktop.png" alt="escritorio" class="img-fluid">
-              </div>
-              <div class="c-container">
-                <h2>Activaciones mediante celular
-                </h2>
-                <p>
-                  Los usuarios de la aplicación, podrán realizar activaciones de las alarmas mediante su celular.
-                </p>
-              </div>
+            <div class="c-container">
+              <h2 class="">Gestion desde computador
+              </h2>
+              <p>
+                Para el usuario administrador, la plataforma podrá ser visualizada a través de pantallas de ordenador,
+                entregando una vista más completa y detallada.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col col-12 col-md-6 d-flex flex-column align-items-center justify-content-md-start cc-container fade-in mb-2 mb-md-0">
+            <div class="c-image">
+              <img src="src/img/movil.png" alt="escritorio" class="img-fluid">
+            </div>
+            <div class="c-container">
+              <h2>Activaciones mediante celular
+              </h2>
+              <p>
+                Los usuarios de la aplicación, podrán realizar activaciones de las alarmas mediante su celular.
+              </p>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
+  </section>
+
+  <!-- Alarma integrada -->
+  <section id="alarma-integrada" class="px-3 text-md-justify">
+    <div class="container-fluid slide-in from-top product-s1">
+      <h2 class="text-center titulo mb-5">Alarma Integrada</h2>
+      <div class="d-flex flex-column flex-md-row align-items-center">
+        <p class="text-center">
+          El Botón de Pánico Virtual es una APP que puede usar en cualquier número de teléfonos móviles Android o
+          iOS, así también como en computadoras normales, tablet y cualquier dispositivo con acceso a internet. Este
+          botón permite poner a su grupo en situación de alerta o peligro, de forma inmediata se envía a todos los
+          involucrados (incluido policías del plan cuadrante) un SMS el detalle de quien presionó el botón, su
+          estado actual, un mapa, teléfono de contacto y acceso directo a WAZE para movilizarse al lugar de alarma.
+          Esto permite que todos los vecinos, porteros, conserjes y organismos de seguridad pertinentes tengan la
+          información necesaria para intervenir en segundos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vigilante virtual -->
+  <section id="vigilante-virtual" class="px-3 text-md-justify">
+    <div class="container-fluid slide-in from-top product-s1">
+      <h2 class="text-center titulo mb-5">Vigilante Virtual</h2>
+      <div class="d-flex flex-column flex-md-row align-items-center">
+        <p class="text-center">
+          El Botón de Pánico Virtual es una APP que puede usar en cualquier número de teléfonos móviles Android o
+          iOS, así también como en computadoras normales, tablet y cualquier dispositivo con acceso a internet. Este
+          botón permite poner a su grupo en situación de alerta o peligro, de forma inmediata se envía a todos los
+          involucrados (incluido policías del plan cuadrante) un SMS el detalle de quien presionó el botón, su
+          estado actual, un mapa, teléfono de contacto y acceso directo a WAZE para movilizarse al lugar de alarma.
+          Esto permite que todos los vecinos, porteros, conserjes y organismos de seguridad pertinentes tengan la
+          información necesaria para intervenir en segundos.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -213,10 +238,10 @@
 
   <section id="contacto">
     <div class="container d-lg-block d-none">
-      <div class="imagenes-contacto img-man fade-in">
+      <div class="imagenes-contacto img-man">
         <img src="src/img/man.svg" alt="">
       </div>
-      <div class="imagenes-contacto img-woman fade-in">
+      <div class="imagenes-contacto img-woman">
         <img src="src/img/woman.svg" alt="">
       </div>
     </div>
@@ -255,7 +280,7 @@
         <a class="navbar-brand" href="#">
           <img src="src/img/logo-white.svg" alt="" width="100" height="100">
         </a>
-        <p class="text-white">Copyright 2021 ©</p>
+        <p class="text-white">Copyright 2022 ©</p>
       </div>
 
 

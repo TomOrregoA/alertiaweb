@@ -50,6 +50,10 @@ h1 {
     font-weight: 700;
 }
 
+h3 {
+    font-weight: 300;
+}
+
 nav,
 header {
     text-align: left;
@@ -157,22 +161,7 @@ header {
     animation-iteration-count: infinite;
 }
 
-/* NOSOTROS */
-/* #nosotros {
-    padding: 3em;
-    position: relative;
-}
-
-.nosotros-text {
-    border: 2px solid var(--grey);
-    border-radius: 25px;
-} */
-
 /* PRODUCTO */
-#producto {
-    padding: 0;
-    margin: 5rem 0;
-}
 
 #cartas {
     background: var(--blue-gradient);
@@ -185,6 +174,10 @@ header {
 
 .c-map-info {
     color: var(--grey);
+}
+
+.c-map img{
+    width: 100%;
 }
 
 .c-image img {
